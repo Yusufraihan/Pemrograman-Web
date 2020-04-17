@@ -1,0 +1,15 @@
+body {
+  background-color: #ff3d3d;
+}
+table{
+  background-color: #a82222;
+  border : 1px solid black;
+  margin: auto;
+  font-size : 30px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
