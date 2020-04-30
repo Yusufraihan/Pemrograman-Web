@@ -1,0 +1,35 @@
+body {
+  background-color: darksalmon;
+}
+
+table {
+  background-color: aquamarine;
+  text-align: center;
+  margin: auto;
+}
+
+.main {
+  background-color: aqua;
+}
+
+img {
+  width: 275px;
+}
+
+.ubah {
+  background-color: blue;
+  border: none;
+}
+
+.ubah:hover {
+  background-color: green;
+}
+
+.hapus {
+  background-color: yellow;
+  border: none;
+}
+
+.hapus:hover {
+  background-color: red;
+}
