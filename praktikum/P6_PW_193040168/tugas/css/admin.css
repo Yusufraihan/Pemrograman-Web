@@ -1,0 +1,46 @@
+body {
+  background-color: darksalmon;
+}
+
+.add button {
+  background-color: lawngreen;
+  border: none;
+  margin: 0px 0px 15px 250px;
+  font-size: medium;
+}
+
+.add button:hover {
+  background-color: teal;
+}
+
+table {
+  background-color: aquamarine;
+  text-align: center;
+  margin: auto;
+}
+
+.main {
+  background-color: aqua;
+}
+
+img {
+  width: 275px;
+}
+
+.ubah {
+  background-color: blue;
+  border: none;
+}
+
+.ubah:hover {
+  background-color: green;
+}
+
+.hapus {
+  background-color: yellow;
+  border: none;
+}
+
+.hapus:hover {
+  background-color: red;
+}
