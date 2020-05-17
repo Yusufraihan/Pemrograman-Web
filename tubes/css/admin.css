@@ -1,0 +1,15 @@
+.container h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+
+body {
+  background-image: url(../assets/img/pewdiepie.jpg);
+  background-size: cover;
+}
+
+.container h3 {
+  color: #ffffff;
+  text-shadow: 5px 4px 3px grey;
+}
