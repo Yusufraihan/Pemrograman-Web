@@ -3,7 +3,7 @@
 function koneksi()
 {
   $conn = mysqli_connect("localhost", "root", "") or die("koneksi ke DB gagal");
-  mysqli_select_db($conn, "pw_193040168") or die("Database salah!");
+  mysqli_select_db($conn, "tubes_193040168") or die("Database salah!");
 
   return $conn;
 }
@@ -26,7 +26,7 @@ function tambah($data)
   $conn = koneksi();
 
   $cover = htmlspecialchars($data['cover']);
-  $judulbuku = htmlspecialchars($data['judul buku']);
+  $judulbuku = htmlspecialchars($data['judul']);
   $penulis = htmlspecialchars($data['penulis']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $harga = htmlspecialchars($data['harga']);

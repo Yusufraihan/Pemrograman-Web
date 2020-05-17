@@ -3,7 +3,7 @@
 function koneksi()
 {
   $conn = mysqli_connect("localhost", "root", "") or die("Koneksi ke DB Gagal");
-  mysqli_select_db($conn, "pw_193040168") or die("Database salah!");
+  mysqli_select_db($conn, "tubes_193040168") or die("Database salah!");
 
   return $conn;
 }
@@ -27,7 +27,7 @@ function tambah($data)
   $conn = koneksi();
 
   $cover = htmlspecialchars($data['cover']);
-  $judulbuku = htmlspecialchars($data['judulbuku']);
+  $judulbuku = htmlspecialchars($data['judul']);
   $penulis = htmlspecialchars($data['penulis']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $harga = htmlspecialchars($data['harga']);
@@ -58,7 +58,7 @@ function ubah($data)
 
   $id = $data['id'];
   $cover = htmlspecialchars($data['cover']);
-  $judulbuku = htmlspecialchars($data['judulbuku']);
+  $judulbuku = htmlspecialchars($data['judul']);
   $penulis = htmlspecialchars($data['penulis']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $harga = htmlspecialchars($data['harga']);
@@ -68,7 +68,7 @@ function ubah($data)
               buku
             SET
             cover = '$cover',
-						judulbuku = '$judulbuku',
+						judul = '$judulbuku',
 						penulis = '$penulis',
 						penerbit = '$penerbit',
 						harga = '$harga'

@@ -11,7 +11,7 @@ require 'functions.php';
 if (isset($_GET['cari'])) {
   $keyword = $_GET['keyword'];
   $buku = query("SELECT * FROM buku WHERE
-              judulbuku LIKE '%$keyword%' OR
+              judul LIKE '%$keyword%' OR
               penulis LIKE '%$keyword%' OR
               penerbit LIKE '%$keyword%' OR
               harga LIKE '%$keyword%' ");
@@ -67,7 +67,7 @@ if (isset($_GET['cari'])) {
             <div class="delete"><a href="hapus.php?id=<?= $b['id']; ?>" onclick="return confirm('Hapus Data ???')"><button>Hapus</button></a></div>
           </td>
           <td><img width="100px" src="../assets/img/<?= $b["cover"]; ?>"></td>
-          <td><?= $b["judul buku"] ?></td>
+          <td><?= $b["judul"] ?></td>
           <td><?= $b["penulis"] ?></td>
           <td><?= $b["penerbit"] ?></td>
           <td><?= $b["harga"] ?></td>

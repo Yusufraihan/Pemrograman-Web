@@ -20,7 +20,7 @@ $buku = query("SELECT * FROM buku")
     <?php foreach ($buku as $b) : ?>
       <p class="nama">
         <a href="php/detail.php?id=<?= $b['id'] ?>">
-          <?= $b["judul buku"]; ?>
+          <?= $b["judul"]; ?>
         </a>
       </p>
     <?php endforeach ?>

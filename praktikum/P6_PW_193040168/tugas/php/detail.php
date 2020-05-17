@@ -33,7 +33,7 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
       <img src="../assets/img/<?= $buku["cover"]; ?>">
     </div>
     <div class="keterangan">
-      <p><?= $buku["judul buku"]; ?></p>
+      <p><?= $buku["judul"]; ?></p>
       <p><?= $buku["penulis"]; ?></p>
       <p><?= $buku["penerbit"]; ?></p>
       <p><?= $buku["harga"]; ?></p>

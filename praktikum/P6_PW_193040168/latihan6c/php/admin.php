@@ -40,7 +40,7 @@ $buku = query("SELECT * FROM buku");
           <a href="hapus.php?id<? $b['id'] ?>" onclick="return confirm('Hapus Data??')"><button class="hapus">Hapus</button></a>
         </td>
         <td><img src="../assets/img/<?= $b["cover"]; ?>"></td>
-        <td><?= $b["judul buku"] ?></td>
+        <td><?= $b["judul"] ?></td>
         <td><?= $b["penulis"] ?></td>
         <td><?= $b["penerbit"] ?></td>
         <td><?= $b["harga"] ?></td>

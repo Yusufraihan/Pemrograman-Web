@@ -27,7 +27,7 @@ function tambah($data)
   $conn = koneksi();
 
   $cover = htmlspecialchars($data['cover']);
-  $judulbuku = htmlspecialchars($data['judulbuku']);
+  $judulbuku = htmlspecialchars($data['judul']);
   $penulis = htmlspecialchars($data['penulis']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $harga = htmlspecialchars($data['harga']);
@@ -58,7 +58,7 @@ function ubah($data)
 
   $id = $data['id'];
   $cover = htmlspecialchars($data['cover']);
-  $judulbuku = htmlspecialchars($data['judulbuku']);
+  $judulbuku = htmlspecialchars($data['judul']);
   $penulis = htmlspecialchars($data['penulis']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $harga = htmlspecialchars($data['harga']);
@@ -68,7 +68,7 @@ function ubah($data)
               buku
             SET
             cover = '$cover',
-						judulbuku = '$judulbuku',
+						judul = '$judulbuku',
 						penulis = '$penulis',
 						penerbit = '$penerbit',
 						harga = '$harga'
